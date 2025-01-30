@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <div class="container">
+      <div class="input-container">
+        <input
+          type="text"
+          placeholder="Enter a task"
+          id="tf-input"
+          class="add-task-field"
+        />
+        <button onclick="addTask()" class="button">Add Task</button>
+      </div>
+      <div>
+        <ul id="task-container">
+          <li id="4344" class="list-item">
+            <span class="task-name">Task 1</span>
+            <button onclick="editTask('4344')" class="edit-button">Edit</button>
+            <button onclick="deleteTask('4344')" class="delete-button">Delete</button>
+            <input type="text" class="edit-input" style="display: none" />
+            <button class="save-button" style="display: none" onclick="saveTask('4344')">Save</button>
+          </li>
+
+          <li id="4345" class="list-item">
+            <span class="task-name">Task 2</span>
+            <button onclick="editTask('4345')" class="edit-button">Edit</button>
+            <button onclick="deleteTask('4345')" class="delete-button">Delete</button>
+            <input type="text" class="edit-input" style="display: none" />
+            <button class="save-button" style="display: none" onclick="saveTask('4345')">Save</button>
+          </li>
+
+          <li id="4348" class="list-item">
+            <span class="task-name">Task 3</span>
+            <button onclick="editTask('4348')" class="edit-button">Edit</button>
+            <button onclick="deleteTask('4348')" class="delete-button">Delete</button>
+            <input type="text" class="edit-input" style="display: none" />
+            <button class="save-button" style="display: none" onclick="saveTask('4348')">Save</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</html>
